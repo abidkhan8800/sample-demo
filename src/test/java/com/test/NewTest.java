@@ -5,10 +5,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class NewTest {
   @Test
   public void f() {
-	  System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome" );
+	  WebDriverManager.chromedriver().setup();
+//	  System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome" );
 	  ChromeOptions options = new ChromeOptions();
 	  options.addArguments("--headless");
 	  ChromeDriver driver = new ChromeDriver(options);
