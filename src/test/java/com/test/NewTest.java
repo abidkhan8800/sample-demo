@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class NewTest {
   @Test
   public void f() {
+	  System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver" );
 	  ChromeOptions options = new ChromeOptions();
 	  options.addArguments("--headless");
 	  ChromeDriver driver = new ChromeDriver(options);
