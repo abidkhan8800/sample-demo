@@ -24,22 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-example_suite_1" class="navigator-link">
+            <a href="#" class="navigator-link" panel-name="suite-example_suite_1">
               <span class="suite-name border-passed">example suite 1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-example_suite_1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-example_suite_1">
                     <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-example_suite_1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-example_suite_1">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-example_suite_1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-example_suite_1">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-example_suite_1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-example_suite_1">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-example_suite_1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-example_suite_1">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-example_suite_1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-example_suite_1">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-example_suite_1" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-example_suite_1">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -103,8 +103,8 @@
                     </span>
                     <div class="method-list-content passed suite-example_suite_1">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-example_suite_1" title="com.test.NewTest" class="method navigator-link" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="com.test.NewTest" hash-for-method="f">f</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-example_suite_1 -->
@@ -143,8 +143,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;example suite 1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Regression suite 1&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;example suite 1&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Regression suite 1&quot;&gt;
     &lt;packages&gt;
       &lt;package name=&quot;com.test&quot;/&gt;
     &lt;/packages&gt;
@@ -193,12 +193,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f')
 data.setCell(0, 2, 'com.test.NewTest')
-data.setCell(0, 3, 1885);
+data.setCell(0, 3, 6727);
 window.suiteTableData['example_suite_1']= { tableData: data, tableDiv: 'times-div-example_suite_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-example_suite_1">
               </div> <!-- times-div-example_suite_1 -->
             </div> <!-- times-div -->
